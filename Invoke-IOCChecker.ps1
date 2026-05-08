@@ -1,6 +1,6 @@
 # ============================================================
 # Invoke-IOCChecker.ps1
-# Author: Caleb Davis
+# Author: Q'Lae Mann
 # Description: Accepts a list of suspicious IP addresses and
 #              queries the AbuseIPDB threat intelligence API
 #              for reputation data. Flags IPs above a defined
@@ -12,7 +12,7 @@
 # ============================================================
 
 # ---------- CONFIGURATION ----------
-$APIKey            = "YOUR_ABUSEIPDB_API_KEY"   # Free tier available at abuseipdb.com
+$APIKey            = $APIKey = $env:ABUSEIPDB_API_KEY  # Free tier available at abuseipdb.com
 $ConfidenceThresh  = 50     # Flag IPs with abuse confidence >= this value (0-100)
 $LookbackDays      = 30     # How far back AbuseIPDB checks reports
 $ReportPath        = ".\IOC_Report_$(Get-Date -Format 'yyyyMMdd_HHmm').csv"
