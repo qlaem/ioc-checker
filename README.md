@@ -30,10 +30,10 @@ This PowerShell script analyzes a list of IP addresses against the AbuseIPDB thr
 
 ```powershell
 setx ABUSEIPDB_API_KEY "your_api_key_here"
+```
 
-# Executes the IOC checker to:
-# - Query AbuseIPDB for IP reputation data
-# - Evaluate IPs against abuse confidence threshold
-# - Generate a CSV report for SIEM ingestion or threat hunting workflows
+3. Run the script:
 
+```powershell
 .\Invoke-IOCChecker.ps1
+```
