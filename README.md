@@ -29,3 +29,25 @@ This PowerShell script analyzes a list of IP addresses against the AbuseIPDB thr
 
 ```powershell
 setx ABUSEIPDB_API_KEY "your_api_key_here"
+
+# Executes the IOC checker to:
+# - Query AbuseIPDB for IP reputation data
+# - Evaluate IPs against abuse confidence threshold
+# - Generate a CSV report for SIEM ingestion or threat hunting workflows
+
+.\Invoke-IOCChecker.ps1
+
+
+---
+
+### After you paste it:
+- Scroll down
+- Click **Commit new file**
+
+---
+
+Once you’ve done that, reply:
+
+**“done”**
+
+and I’ll move you to Step 4 — which is where we make this look like a *real cybersecurity project recruiters actually respect* (badges, structure, and how to present it on your resume).
